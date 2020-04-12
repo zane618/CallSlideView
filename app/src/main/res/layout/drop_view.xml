@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fskhdflsflsdhfkhs"/>
     <com.example.callslideview.CallSliderView
         android:id="@+id/slider_view"
         android:layout_width="wrap_content"
@@ -18,5 +21,4 @@
         app:CallSliderView_Left_Text="接听"
         app:CallSliderView_Right_Text="挂断"
         app:CallSliderView_textSize="20sp" />
-
 </RelativeLayout>

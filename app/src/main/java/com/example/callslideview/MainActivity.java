@@ -3,6 +3,7 @@ package com.example.callslideview;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,14 +19,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSliderEnd() {
                 Toast.makeText(MainActivity.this, "挂断", Toast.LENGTH_SHORT).show();
-                finish();
+                new TopDropView(MainActivity.this);
             }
 
             @Override
             public void onSliderListen() {
                 Toast.makeText(MainActivity.this, "接听", Toast.LENGTH_SHORT).show();
-                finish();
+                new MyDialog(MainActivity.this).show();
             }
         });
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                new TopDropView(MainActivity.this);
+            }
+        }, 1);
     }
+
 }
