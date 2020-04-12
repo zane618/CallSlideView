@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.callslideview.CallSliderView
+        android:id="@+id/slider_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        app:CallSliderView_backgroundColor="@color/gray"
+        app:CallSliderView_progressBackgroundColor="@color/red"
+        app:CallSliderView_text="滑动"
+        app:CallSliderView_Left_Text="接听"
+        app:CallSliderView_Right_Text="挂断"
+        app:CallSliderView_textSize="20sp" />
+
+</RelativeLayout>
